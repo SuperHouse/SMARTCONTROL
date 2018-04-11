@@ -338,19 +338,19 @@
 <wire x1="-7.5" y1="7" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-7.5" y1="-6" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
 <wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
-<pad name="1" x="3.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="2" x="2.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="3" x="1.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="4" x="0.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="5" x="-0.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="6" x="-1.5" y="4" drill="0.8" diameter="1.4224"/>
-<hole x="-7.5" y="0" drill="2.5"/>
-<hole x="7.5" y="0" drill="2.5"/>
+<pad name="1" x="3.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="2.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="1.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="0.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="-0.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="-1.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<hole x="-7.5" y="0" drill="2.4"/>
+<hole x="7.5" y="0" drill="2.4"/>
 <text x="-2.54" y="-1.65" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.92" size="0.8128" layer="27">&gt;VALUE</text>
 <wire x1="7.5" y1="-6" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
-<pad name="7" x="-2.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="8" x="-3.5" y="4" drill="0.8" diameter="1.4224"/>
+<pad name="7" x="-2.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="8" x="-3.5" y="4.84" drill="0.8" diameter="1.4224"/>
 </package>
 <package name="1206">
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -3039,8 +3039,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="GPIO15" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="GPIO2" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="GPIO0" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GPIO5" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="GPIO4" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="RXD" x="17.78" y="5.08" length="middle" direction="in" rot="R180"/>
 <pin name="TXD" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 </symbol>
@@ -3271,8 +3271,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="14"/>
-<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
@@ -3294,8 +3294,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="14"/>
-<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
@@ -5215,7 +5215,7 @@ Note that the ground pin is labelled as ground, not as adj, because it's not the
 </class>
 </classes>
 <parts>
-<part name="R4" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="330R"/>
+<part name="R4" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="100R"/>
 <part name="IC1" library="freetronics-jon" deviceset="ESP12" device="SMT"/>
 <part name="GND3" library="freetronics-original" deviceset="GND" device=""/>
 <part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="10k"/>
@@ -5298,7 +5298,7 @@ Weak local pull-ups on the buttons so that it can run without a controller.</tex
 <text x="99.06" y="10.16" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
 Output 2: GPIO13
 Output 3: GPIO14
-Output 4: GPIO4
+Output 4: GPIO5
 LEDs: GPIO16 (ws2811)</text>
 <text x="78.74" y="121.92" size="2.1844" layer="97" font="vector" ratio="15">3.3V Programming Header</text>
 <text x="93.98" y="170.18" size="1.27" layer="98">SOT-223</text>
@@ -5314,7 +5314,7 @@ LEDs: GPIO16 (ws2811)</text>
 <text x="132.08" y="111.76" size="1.778" layer="97">Button 1</text>
 <text x="132.08" y="109.22" size="1.778" layer="97">Button 2</text>
 <text x="132.08" y="114.3" size="1.778" layer="97">Button 3</text>
-<text x="243.84" y="119.38" size="1.778" layer="97">Button 4</text>
+<text x="241.3" y="119.38" size="1.778" layer="97">Button 4</text>
 <text x="132.08" y="116.84" size="1.778" layer="97">LEDs</text>
 </plain>
 <instances>
@@ -5609,13 +5609,6 @@ LEDs: GPIO16 (ws2811)</text>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO5"/>
-<wire x1="213.36" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
-<label x="231.14" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO4" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPIO4"/>
 <wire x1="213.36" y1="119.38" x2="241.3" y2="119.38" width="0.1524" layer="91"/>
 <label x="231.14" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -5627,6 +5620,13 @@ LEDs: GPIO16 (ws2811)</text>
 <wire x1="220.98" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 <junction x="220.98" y="60.96"/>
 <label x="223.52" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="GPIO4"/>
+<wire x1="213.36" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
+<label x="231.14" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">
@@ -6034,7 +6034,7 @@ LEDs: GPIO16 (ws2811)</text>
 <approved hash="106,1,58.42,22.86,DATA_6,,,,,"/>
 <approved hash="106,1,43.18,20.32,DATA_7,,,,,"/>
 <approved hash="106,1,58.42,20.32,DATA_8,,,,,"/>
-<approved hash="106,1,213.36,116.84,GPIO5,,,,,"/>
+<approved hash="106,1,213.36,116.84,GPIO4,,,,,"/>
 <approved hash="106,1,43.18,17.78,VIN,,,,,"/>
 <approved hash="113,1,17.1027,129.83,JP4,,,,,"/>
 <approved hash="113,1,88.2227,106.97,JP1,,,,,"/>
